@@ -7,13 +7,12 @@
                     "chrome": "67"
                 },
                 "useBuiltIns": "usage"
-            },
+            }
         ],
         "@babel/preset-react"
     ],
     "plugins": [
-        [ 
-            "transform-class-properties" //react中箭头函数支持
-        ]
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-class-properties" //react中箭头函数支持
     ]
 }
